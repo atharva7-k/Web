@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JAMMU AND KASHMIR</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('https://blogs.revv.co.in/blogs/wp-content/uploads/2021/02/Sonamarg.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 4rem;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      border-radius: 15px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: #0077b6;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .images img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .hotels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .hotel-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .hotel-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .hotel-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hotel-card .content {
+      padding: 20px;
+    }
+
+    .hotel-card h3 {
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+
+    .hotel-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .hotel-card a {
+      color: #fff;
+      background: #0077b6;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0077b6;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Discover the Jammu and Kashmir</h1>
+  </header>
+
+  <section>
+    <h2>Photo Gallery</h2>
+    <div class="images">
+      <img src="https://www.hindustantimes.com/ht-img/img/2023/06/16/1600x900/Jammu_and_Kashmir_tourism_1686910855332_1686910864189.jpg" alt="Maldives Beach">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.qPPuvE7mWu6_1N1ikpLI9wHaE7&pid=Api&P=0&h=180" alt="Maldives Resort">
+      <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/67000/67978-Jammu-And-Kashmir.jpg" alt="Maldives Sunset">
+      <img src="https://www.revv.co.in/blogs/wp-content/uploads/2022/02/Jammu-and-Kashmir.jpg" alt="Maldives Island">
+    </div>
+  </section>
+
+  <section>
+    <h2>Traditions</h2>
+    <div class="hotels">
+      <div class="hotel-card">
+        <img src="https://www.indianholiday.com/photo-gallery/jammu-kashmir/tourism-j-&-k/fairs-festivals/hemis-festival/Hemis-Festival-1-3572.jpg" alt="Baros Maldives">
+        <div class="content">
+          <h3>Hemis Festival</h3>
+          <p>Celebrated in Ladakh to honor Guru Padmasambhava with dance and music.</p>
+          <!-- <a href="https://www.baros.com/" >Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://live.staticflickr.com/8739/17063095555_4883caecfc_b.jpg" alt="Soneva Fushi">
+        <div class="content">
+          <h3>Tulip Festival </h3>
+          <p>A vibrant spring festival in Srinagar showcasing tulip blooms.</p>
+          <!-- <a href="https://soneva.com/resorts/soneva-fushi/">Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Shaheen_Ali/Kashmiri_Rogan_Josh.jpg" alt="Gili Lankanfushi">
+        <div class="content">
+          <h3>Rogan Josh</h3>
+          <p>Aromatic lamb curry with rich spices.</p>
+          <!-- <a href="https://www.gili-lankanfushi.com/" >Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://images.indianexpress.com/2019/12/Kahwa.jpg?resize=150" alt="The St. Regis Maldives">
+        <div class="content">
+          <h3>Kahwa</h3>
+          <p> Traditional green tea infused with saffron and nuts.</p>
+          <!-- <a href="https://www.marriott.com/en-us/hotels/mlexr-the-st-regis-maldives-vommuli-resort/" >Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://www.freeworldmaps.net/asia/india/jammuandkashmir/where-is-jammuandkashmir.jpg" alt="The St. Regis Maldives">
+        <div class="content">
+          <h3>Location</h3>
+          <p>Jammu and Kashmir is in northern India, bordered by Pakistan, China, Ladakh, and Punjab.</p>
+          <!-- <a href="https://www.marriott.com/en-us/hotels/mlexr-the-st-regis-maldives-vommuli-resort/" >Visit Site</a> -->
+        </div>
+      </div>
+      <!-- Hotel 6 -->
+      <div class="hotel-card">
+        <img src="https://2.bp.blogspot.com/-O-7LKdWnCX8/VMuPKsYYnLI/AAAAAAAACzs/OF5F8kYLxxQ/s1600/1_Lidder_river_Jammu_Kashmir_India.jpg" alt="Hillside Beach Club Fethiye">
+        <div class="content">
+          <h3>Lidder River</h3>
+          <p>The Lidder River flows through the Kashmir Valley, originating from the Kolahoi Glacier and merging with the Jhelum River.</p>
+          <!-- <a href="https://www.hillsidebeachclub.com/">Visit Site</a> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <nav style="text-align: center; margin: 40px 0;">
+    <a href="index.html" style="text-decoration: none; color: #0077b6; font-size: 1.1rem; font-weight: bold;">
+      ← Go to Previous Page
+    </a>
+  </nav>
+
+  <footer>
+    © INDIA All Rights Reserved.
+  </footer>
+
+</body>
+</html>

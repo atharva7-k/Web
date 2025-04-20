@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PUNJAB</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('https://www.fabhotels.com/blog/wp-content/uploads/2019/04/Amritsar1.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 4rem;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      border-radius: 15px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: #0077b6;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .images img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .hotels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .hotel-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .hotel-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .hotel-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hotel-card .content {
+      padding: 20px;
+    }
+
+    .hotel-card h3 {
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+
+    .hotel-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .hotel-card a {
+      color: #fff;
+      background: #0077b6;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0077b6;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Discover the Punjab</h1>
+  </header>
+
+  <section>
+    <h2>Photo Gallery</h2>
+    <div class="images">
+      <img src="https://static.wixstatic.com/media/58cf6b_7707d8e5c1d941d58a0a60a215a8eeb8~mv2.jpg/v1/fill/w_1000,h_662,al_c,q_85,usm_0.66_1.00_0.01/58cf6b_7707d8e5c1d941d58a0a60a215a8eeb8~mv2.jpg" alt="Maldives Beach">
+      <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2021/11/12124443/Punjab.jpg" alt="Maldives Resort">
+      <img src="https://i.dawn.com/primary/2019/05/5cd567c38364e.jpg" alt="Maldives Sunset">
+      <img src="https://images.mapsofworld.com/answers/2017/02/Punjab-700x438.jpg" alt="Maldives Island">
+    </div>
+  </section>
+
+  <section>
+    <h2>Traditions</h2>
+    <div class="hotels">
+      <div class="hotel-card">
+        <img src="https://mews.in/wp-content/uploads/2021/12/Gurupurab-Punjabi-festival.jpg" alt="Baros Maldives">
+        <div class="content">
+          <h3>Guru Nanak Jayanti</h3>
+          <p>It celebrates the birth anniversary of Guru Nanak Dev Ji, the first Sikh Guru and the founder of Sikhism.</p>
+          <!-- <a href="https://www.baros.com/" >Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://stylesatlife.com/wp-content/uploads/2014/03/punjab-festivals4.jpg" alt="Soneva Fushi">
+        <div class="content">
+          <h3>Baisakhi</h3>
+          <p>It marks the harvest season in Punjab and holds religious significance for Sikhs as the day Guru Gobind Singh Ji established the Khalsa Panth in 1699. </p>
+          <!-- <a href="https://soneva.com/resorts/soneva-fushi/">Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://www.allaboutsikhs.com/wp-content/uploads/2021/02/butterchicken-1024x682-1-e1613522931209.jpg" alt="Gili Lankanfushi">
+        <div class="content">
+          <h3>Butter Chicken</h3>
+          <p>A creamy, spiced chicken curry.</p>
+          <!-- <a href="https://www.gili-lankanfushi.com/" >Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://wp.scoopwhoop.com/wp-content/uploads/2014/08/567731256e510a6f3a7598b1_f3.jpg" alt="The St. Regis Maldives">
+        <div class="content">
+          <h3>Aloo Paratha</h3>
+          <p> Flatbread stuffed with spiced mashed potatoes.</p>
+          <!-- <a href="https://www.marriott.com/en-us/hotels/mlexr-the-st-regis-maldives-vommuli-resort/" >Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://www.freeworldmaps.net/asia/india/punjab/where-is-punjab.jpg" alt="The St. Regis Maldives">
+        <div class="content">
+          <h3>Location</h3>
+          <p>Punjab is in northern India, bordered by Haryana, Himachal Pradesh, Jammu & Kashmir, and Pakistan.</p>
+          <!-- <a href="https://www.marriott.com/en-us/hotels/mlexr-the-st-regis-maldives-vommuli-resort/" >Visit Site</a> -->
+        </div>
+      </div>
+      <!-- Hotel 6 -->
+      <div class="hotel-card">
+        <img src="https://mews.in/wp-content/uploads/2021/12/Lohri-is-one-of-the-Punjabi-festivals.jpg" alt="Hillside Beach Club Fethiye">
+        <div class="content">
+          <h3>Lohri</h3>
+          <p>Lohri marks the end of winter and the beginning of the harvest season, particularly for crops like sugarcane and wheat.</p>
+          <!-- <a href="https://www.hillsidebeachclub.com/">Visit Site</a> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <nav style="text-align: center; margin: 40px 0;">
+    <a href="index.html" style="text-decoration: none; color: #0077b6; font-size: 1.1rem; font-weight: bold;">
+      ← Go to Previous Page
+    </a>
+  </nav>
+
+  <footer>
+    © INDIA All Rights Reserved.
+  </footer>
+
+</body>
+</html>

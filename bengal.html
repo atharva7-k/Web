@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WEST BENGAL</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('https://www.tripsavvy.com/thmb/p6tYMMFa5cbRKClceIryGUgcED4=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1038145498-5c09bd5c1efb424b8f47982d26591e7c.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 4rem;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      border-radius: 15px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: #0077b6;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .images img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .hotels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .hotel-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .hotel-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .hotel-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hotel-card .content {
+      padding: 20px;
+    }
+
+    .hotel-card h3 {
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+
+    .hotel-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .hotel-card a {
+      color: #fff;
+      background: #0077b6;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0077b6;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Discover the West Bengal</h1>
+  </header>
+
+  <section>
+    <h2>Photo Gallery</h2>
+    <div class="images">
+      <img src="https://wallpaperaccess.com/full/1883866.jpg" alt="Maldives Beach">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.s-IO2VGMrXrykLVllgK-KwHaDR&pid=Api&P=0&h=180" alt="Maldives Resort">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.ASfQCluYYhDCypSgJWI9LAHaEK&pid=Api&P=0&h=180" alt="Maldives Sunset">
+      <img src="https://www.adotrip.com/public/images/state/contentImg/5f22803a31b5b.jpg" alt="Maldives Island">
+    </div>
+  </section>
+
+  <section>
+    <h2>Traditions</h2>
+    <div class="hotels">
+      <div class="hotel-card">
+        <img src="https://www.indianholiday.com/pictures/travelguide/fairandfestival/durga-puja-686.jpeg" alt="Baros Maldives">
+        <div class="content">
+          <h3>Durga Puja</h3>
+          <p>Durga Puja is a major Hindu festival celebrating Goddess Durga’s victory over evil, symbolizing the triumph of good.</p>
+          <!-- <a href="https://www.baros.com/" >Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://www.caleidoscope.in/wp-content/uploads/2021/05/Folk-Dances-of-West-Bengal-800x534.jpg" alt="Soneva Fushi">
+        <div class="content">
+          <h3>Folk Dance</h3>
+          <p>The famous folk dance of West Bengal is Chhau, along with Baul,Gambhira, and Santhal dances, showcasing vibrant cultural traditions.</p>
+          <!-- <a href="https://soneva.com/resorts/soneva-fushi/">Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://i.ndtvimg.com/i/2015-08/rasgulla_625x350_61440575963.jpg" alt="Gili Lankanfushi">
+        <div class="content">
+          <h3>Rosogolla</h3>
+          <p>Soft, spongy syrupy dessert</p>
+          <!-- <a href="https://www.gili-lankanfushi.com/" >Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.bzdVZQdiEPyjIy60bmanzAHaGV&pid=Api&P=0&h=180" alt="The St. Regis Maldives">
+        <div class="content">
+          <h3>Mishti Doi</h3>
+          <p> Sweetened fermented yogurt</p>
+          <!-- <a href="https://www.marriott.com/en-us/hotels/mlexr-the-st-regis-maldives-vommuli-resort/" >Visit Site</a> -->
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://www.freeworldmaps.net/asia/india/westbengal/where-is-westbengal.jpg" alt="The St. Regis Maldives">
+        <div class="content">
+          <h3>Location</h3>
+          <p>West Bengal is in eastern India, bordered by Bangladesh, Bihar, Jharkhand, Odisha, and the Bay of Bengal.</p>
+          <!-- <a href="https://www.marriott.com/en-us/hotels/mlexr-the-st-regis-maldives-vommuli-resort/" >Visit Site</a> -->
+        </div>
+      </div>
+      <!-- Hotel 6 -->
+      <div class="hotel-card">
+        <img src="https://i.pinimg.com/originals/cb/09/5a/cb095a324a78e08b52a5dbe1ea98067c.jpg" alt="Hillside Beach Club Fethiye">
+        <div class="content">
+          <h3>Shorshe Ilish</h3>
+          <p> Hilsa fish cooked in mustard gravy</p>
+          <!-- <a href="https://www.hillsidebeachclub.com/">Visit Site</a> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <nav style="text-align: center; margin: 40px 0;">
+    <a href="index.html" style="text-decoration: none; color: #0077b6; font-size: 1.1rem; font-weight: bold;">
+      ← Go to Previous Page
+    </a>
+  </nav>
+
+  <footer>
+    © INDIA All Rights Reserved.
+  </footer>
+
+</body>
+</html>
